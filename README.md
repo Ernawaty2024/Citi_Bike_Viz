@@ -50,6 +50,8 @@ The primary dataset for this analysis comes from Citi Bike’s Trip History Logs
   - Donut charts displaying the number of rides across seasons and bike types.
 
   - Dynamic maps that track how each station’s popularity changes over time and location.
+  - Link to the URL : <code style ="color:blue">[Citi_Bike_Vis](https://public.tableau.com/app/profile/ernawaty.ernawaty/viz/Citi_Bike_Viz_17257435405910/Story1?publish=yes)</code>
+
 
 ## Tableau Story Creation:
 
