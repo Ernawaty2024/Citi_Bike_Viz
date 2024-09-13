@@ -1,30 +1,77 @@
-# Citi_Bike_Viz
+# CITI BIKE ANALYTICS
 
-Identifying Unexpected Phenomena
-Phenomenon 1: Variation in Bike Usage Across Different User Types (Member vs Casual)
-Hypothesis: There might be significant differences between members and casual riders in terms of ride patterns, usage duration, and preferred stations.
-Suggested Visualizations:
+## Introduction:
+The Citi Bike program, launched in 2013, is the largest bike-sharing initiative in the United States, based in New York City. This program enables New Yorkers and visitors to easily rent and return bikes across numerous stations in the city. Over the years, a substantial amount of data has been collected to track ridership patterns, station usage, and bike availability, making it a valuable source of information for understanding urban mobility.
 
-Bar Chart: Visualize the proportion of total trips taken by members versus casual riders across the chosen time period. This will help highlight any shifts or changes in the user base.
-Line Chart: Show how the total ridership has changed over time for both user types. This can reveal seasonal patterns or trends.
-Heat Map of Stations: Display a map showing the most popular starting and ending stations for both members and casual users. Use color intensity to represent trip counts.
-Time Series of Peak Hours: Compare the peak hours for bike usage by members and casual users. This can uncover whether different user types have distinct commuting or leisure patterns.
-Box Plot: Show the distribution of trip duration (from Started at to Ended at) by user type. This will help identify if casual users typically have longer or shorter trips compared to members.
+The goal of this project is to analyze Citi Bike’s publicly available trip history logs, uncover two unexpected phenomena, and provide key insights to help city officials enhance the bike-sharing service.
 
-### Phenomenon 2: Station Popularity and its Connection to Geographic or Socioeconomic Factors
+## Purpose:
+This project seeks to achieve the following objectives:
 
-Hypothesis: Some stations may be much more popular for starting or ending trips due to their proximity to key transit hubs, recreational areas, or specific demographic regions.
+- Analyze Ridership Trends: 
+Identify trends and patterns in bike usage across different time periods and locations in New York City.
 
-Suggested Visualizations:
+- Discover Unexpected Phenomena: Using data aggregation and visualization, discover at least two surprising or unusual findings that might reveal important insights for city planners and program administrators.
 
-Static Map of Bike Stations: Plot all bike stations with color-coding based on the frequency of trips starting or ending at each station. Overlap zip code data or population density to explore potential correlations.
-Dynamic Time-Based Map: Create a dynamic map to visualize how the popularity of stations changes over time. Use filters for specific months or years to identify seasonality or trends.
-Top 10 Starting and Ending Stations: Create bar charts showing the top 10 stations for starting and ending trips. Add annotations or tooltips to explain why these locations are popular (e.g., proximity to parks, business centers, or transit).
-Bottom 10 Stations: Similarly, visualize the bottom 10 stations and try to explain their low usage rates. This could help city planners understand underutilized infrastructure.
-Scatter Plot of Trip Distance: Show trip distances by start station location to uncover whether some stations are associated with longer trips, perhaps in areas with fewer nearby stations.
-Analysis:
+- Create Dashboards and Visualizations: Build interactive dashboards using Tableau to present the findings in a clear and visually appealing format. These visualizations will allow city officials to better understand the program’s performance and make data-driven decisions for its future development.
 
-Use socioeconomic or geographic data to explain why some stations might be underutilized or overutilized. For example, stations near major transportation hubs may experience higher usage, while stations in residential areas may have more casual riders.
-Examine whether certain stations are more prone to short trips (e.g., from one transit stop to another) or longer recreational rides (e.g., along a waterfront or park).
-Dashboard Design
-You can create two dashboards, one for each phenomenon.
+- Provide Recommendations: Offer suggestions for improving the bike-sharing system based on the analysis, including potential opportunities for increasing ridership or addressing program inefficiencies.
+
+## Data Sources:
+The primary dataset for this analysis comes from Citi Bike’s Trip History Logs, which are publicly available and updated monthly. The dataset includes key attributes such as:
+
+- Ride ID
+- Start and End Time
+-Start and End Station Names
+-Latitude and Longitude Coordinates of Stations
+-Rideable Type (Classic or Electric Bike)
+-User Type (Member or Casual)
+-Trip Duration
+-Timespan: Data from multiple periods (months and/or years) can be combined to assess trends over time. The timespan used in this analysis depends on the phenomena identified.
+
+## Project Usage and Methodology:
+- Data Cleaning and Preparation:
+
+  - Aggregation: Multiple CSV files containing trip history logs were downloaded from Citi Bike's data page. These datasets were merged to analyze usage across different months and years.
+  - Cleaning: Any missing or irrelevant data points were removed or filtered to ensure data accuracy. This included handling missing station names and ride IDs.
+
+- Data Visualization & Analysis:
+
+  - Unexpected Phenomena Discovery: Using exploratory data analysis (EDA), two unexpected phenomena were identified within the dataset. Visualizations were created to illustrate these phenomena.
+
+  - Station Popularity Fluctuations: Dynamic maps were created to show how bike station popularity changed over time, with zip code data overlaid to contextualize usage based on geographic and socioeconomic factors.
+
+  - Unusual User Behavior: Visualizations explored differences in ride duration, ride frequency, and bike type preference across different user groups (members vs. casual riders).
+
+  - Advanced Visualization Creation: Tableau dashboards were designed to include various charts and maps, such as:
+
+  - Heatmaps showing peak hours by user type.
+
+  - Donut charts displaying the number of rides across seasons and bike types.
+
+  - Dynamic maps that track how each station’s popularity changes over time and location.
+
+## Tableau Story Creation:
+
+A Tableau Story was created to bring together all the visualizations and dashboards. This story format allows city officials to interactively explore different aspects of the data, including ridership trends, user behavior, and geographic patterns.
+
+### Visualization Types Used:
+- Dynamic Map with Zip Code Overlay: Highlights how station popularity changes across different neighborhoods and income levels.
+- Heatmaps: Shows peak bike usage hours segmented by user type (weekday vs. weekend).
+- Donut Charts: Compares the proportion of rides across seasons and membership types.
+Line Charts: Track monthly ride counts and station popularity trends.
+- Bar Graphs: Represent bike usage based on trip duration and user type (classic vs. electric bikes).
+
+## Results and Trends:
+- Key Insight 1: Shifts in Station Popularity Over Time
+The dynamic maps revealed significant changes in station usage across the seasons. Certain stations, especially those near high-income neighborhoods and major transit hubs, showed consistently high usage, while others fluctuated depending on external factors like weather, events, and commuting trends.
+
+- Key Insight 2: Differences in Ride Behavior Based on User Type
+The analysis showed distinct differences between members and casual riders. Casual riders tended to use bikes for shorter, recreational trips on weekends, while members were more likely to use bikes for commuting during weekdays, especially during peak hours. This distinction helps city planners better understand the different user demographics and their needs.
+
+## Conclusion:
+This project demonstrates the value of Citi Bike’s trip history data in uncovering hidden trends and patterns in urban mobility. By identifying unexpected phenomena, city officials can make data-driven decisions to improve bike accessibility, optimize station placement, and cater to both casual and commuter ridership. The dashboards and visualizations provided will serve as an ongoing resource for the Citi Bike program as it continues to expand and adapt to New York City’s evolving transportation needs.
+
+## Usage Notes:
+Tableau Dashboards: The interactive Tableau dashboards allow users to filter the data by season, bike type, user type, and more. City officials can explore these dashboards to understand how various factors influence bike-sharing usage.
+File Formats: The raw data is stored in CSV format, and the visualizations are shared through Tableau Public, making the analysis easily accessible and shareable.
