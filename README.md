@@ -22,11 +22,11 @@ The primary dataset for this analysis comes from Citi Bike’s Trip History Logs
 
 - Ride ID
 - Start and End Time
--Start and End Station Names
--Latitude and Longitude Coordinates of Stations
--Rideable Type (Classic or Electric Bike)
--User Type (Member or Casual)
--Trip Duration
+- Start and End Station Names
+- Latitude and Longitude Coordinates of Stations
+- Rideable Type (Classic or Electric Bike)
+- User Type (Member or Casual)
+- Trip Duration
 -Timespan: Data from multiple periods (months and/or years) can be combined to assess trends over time. The timespan used in this analysis depends on the phenomena identified.
 
 ## Project Usage and Methodology:
@@ -38,6 +38,14 @@ The primary dataset for this analysis comes from Citi Bike’s Trip History Logs
 - Data Visualization & Analysis:
 
   - Unexpected Phenomena Discovery: Using exploratory data analysis (EDA), two unexpected phenomena were identified within the dataset. Visualizations were created to illustrate these phenomena.
+  
+      Two phenomena identified are:
+    1. Variation in Bike Usage Based on Membership Type:
+
+        The analysis reveals distinct patterns in bike usage between electric bikes and classic bikes across different membership types. This includes variations in peak usage hours, ride duration, and seasonal trends for each membership category (annual members vs. casual riders). For instance, classic bike users consistently outnumber electric bike users, and there are clear distinctions in how different user groups prefer certain types of bikes.
+
+    2. Geographic and Socioeconomic Influence on Bike Usage:
+        Another phenomenon relates to the geographic distribution of rides and how socioeconomic factors, such as household income, influence bike usage. The dashboards suggest that stations located in higher-income areas tend to see more Citi Bike activity, while lower-income areas exhibit moderate usage. There is also a notable correlation between bike usage and proximity to public transit hubs, which suggests that Citi Bikes are often used as a last-mile commuting option.
 
   - Station Popularity Fluctuations: Dynamic maps were created to show how bike station popularity changed over time, with zip code data overlaid to contextualize usage based on geographic and socioeconomic factors.
 
